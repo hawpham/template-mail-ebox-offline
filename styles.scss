@@ -91,11 +91,17 @@ img {
 .text-orange {
 	color: #FF7A00;
 }
+.text-grey {
+	color: #444;
+}
 .text-bold {
     font-weight: 600;
 }
 .text-size-14 {
 	font-size: 14px;
+}
+.text-size-16 {
+	font-size: 16px;
 }
 .text-dec-none {
 	text-decoration: none;
@@ -103,6 +109,12 @@ img {
 .box {
 	position: relative;
 	display: block;
+}
+.text-align-left {
+	text-align: left;
+}
+.text-align-center {
+	text-align: center;
 }
 .container-area {
 	position: relative;
@@ -930,7 +942,7 @@ $sizes_indent: 10px, 15px, 20px, 25px, 30px, 40px, 50px;
 // End qrticket style
 
 // start box promo NFT code
-.table-promo-nft {
+.table-promo-content {
 	padding: 20px;
 	text-align: center;
 	background-color: #EBECF2;
@@ -946,6 +958,13 @@ $sizes_indent: 10px, 15px, 20px, 25px, 30px, 40px, 50px;
 		height: 1.28px;
 		background-image: linear-gradient(to right, transparent 50%, #888 50%);
 		background-size: 15px 100%;
+	}
+	.line-dash-long {
+		display: inline-block;
+		width: 80%;
+		height: 1.28px;
+		background-image: linear-gradient(to right, transparent 50%, #888 50%);
+		background-size: 10px 100%;
 	}
 	&__title {
 		font-size: 14px;
@@ -1008,8 +1027,9 @@ $sizes_indent: 10px, 15px, 20px, 25px, 30px, 40px, 50px;
 	&__title {
 		font-size: 16px;
 		font-weight: 600;
-		color: #013EA7;
-	}
+		margin: 5px 0;
+	} 
+
 }
 
 .table-wrapper-banner {
@@ -1046,7 +1066,7 @@ $sizes_indent: 10px, 15px, 20px, 25px, 30px, 40px, 50px;
 		}
 		.td-box-content {
 			min-width: 230px;
-			padding: 15px 10px;
+			padding: 20px;
 			color: #ffffff;
 			p {
 				margin: 8px 0;
